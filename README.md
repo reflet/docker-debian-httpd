@@ -1,4 +1,4 @@
-# Debian8 Apache (日本環境） #
+# Debian Apache (日本環境） #
 
 オフィシャルのhttpd:2.4をベースにApacheコンテナを作成する。
 
