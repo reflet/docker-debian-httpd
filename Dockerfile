@@ -25,6 +25,7 @@ RUN chmod 705 /var/www/ && \
     mkdir -p /usr/local/apache2/conf.d/virtualhost/ && \
     { \
       echo ''; \
+      echo 'LoadModule rewrite_module modules/mod_rewrite.so'; \
       echo 'LoadModule proxy_module modules/mod_proxy.so'; \
       echo 'LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so'; \
       echo ''; \
