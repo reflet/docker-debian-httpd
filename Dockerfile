@@ -20,7 +20,6 @@ ENV TERM xterm
 RUN apt-get -y install less vim git
 
 # apache setting
-WORKDIR /var/www/
 RUN chmod 705 /var/www/ && \
     mkdir -p /usr/local/apache2/conf.d/virtualhost/ && \
     { \
@@ -53,6 +52,10 @@ RUN chmod 705 /var/www/ && \
       echo 'IncludeOptional conf.d/virtualhost/*.conf'; \
     } >> /usr/local/apache2/conf/httpd.conf
 
+# Enabling module rewrite.
+# RUN a2enmod rewrite
+
 # user setting
-RUN usermod -u 1000 www-data \
-    && groupmod -g 1000 www-data
+WORKDIR /usr/local/apache2/
+RUN usermod -u 500 www-data \
+    && groupmod -g 500 www-data

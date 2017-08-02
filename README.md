@@ -15,6 +15,7 @@
 下記のコマンドにてコンテナを起動します。
 
 ```
+#!sh
 $ docker pull reflet/debian8-httpd
 $ docker run --name httpd -d -p 80:80 local/debian8-httpd
 $ docker ps -a
@@ -26,9 +27,11 @@ $ curl http://192.168.33.10/
 下記のコマンドにてソースのダウンロードとイメージの構築を実行します。
 
 ```
-$ git clone https://github.com/reflet/docker-debian-httpd.git .
+#!sh
+$ git clone git@bitbucket.org:reflet/docker-debian8-httpd.git .
 $ docker build -t reflet/debian8-httpd .
 $ docker login
+$ docker tag reflet/debian8-httpd reflet/debian8-httpd:{タグ}
 $ docker push reflet/debian8-httpd
 ```
 
