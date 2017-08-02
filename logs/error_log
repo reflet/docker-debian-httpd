@@ -1,0 +1,10 @@
+[Wed Aug 02 23:57:03.733096 2017] [ssl:warn] [pid 1:tid 140247982884736] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Aug 02 23:57:03.750733 2017] [ssl:warn] [pid 1:tid 140247982884736] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 03 00:05:18.587068 2017] [ssl:warn] [pid 1:tid 140399391168384] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 03 00:05:18.602823 2017] [ssl:warn] [pid 1:tid 140399391168384] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 03 00:13:09.010920 2017] [ssl:warn] [pid 1:tid 139922909923200] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 03 00:13:09.067326 2017] [ssl:warn] [pid 1:tid 139922909923200] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 03 00:21:58.998753 2017] [ssl:warn] [pid 1:tid 140225345300352] AH01909: 127.0.0.1:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 03 00:21:59.020409 2017] [ssl:warn] [pid 1:tid 140225345300352] AH01909: 127.0.0.1:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 03 00:28:58.382505 2017] [ssl:warn] [pid 1:tid 140715543988096] AH01909: 127.0.0.1:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 03 00:28:58.406820 2017] [ssl:warn] [pid 1:tid 140715543988096] AH01909: 127.0.0.1:443:0 server certificate does NOT include an ID which matches the server name

@@ -1,0 +1,11 @@
+[Wed Aug 02 23:39:17.134614 2017] [authz_core:error] [pid 7:tid 140423377979136] [client 192.168.33.1:62516] AH01630: client denied by server configuration: /var/www
+[Wed Aug 02 23:39:17.441711 2017] [authz_core:error] [pid 7:tid 140423369586432] [client 192.168.33.1:62516] AH01630: client denied by server configuration: /var/www, referer: http://www.example.com/
+[Wed Aug 02 23:41:25.750845 2017] [authz_core:error] [pid 6:tid 140423377979136] [client 192.168.33.1:62519] AH01630: client denied by server configuration: /var/www
+[Wed Aug 02 23:41:25.843674 2017] [authz_core:error] [pid 6:tid 140423369586432] [client 192.168.33.1:62519] AH01630: client denied by server configuration: /var/www, referer: http://www.example.com/
+[Wed Aug 02 23:46:39.667794 2017] [authz_core:error] [pid 8:tid 140624838067968] [client 192.168.33.1:62534] AH01630: client denied by server configuration: /var/www/www.example.com
+[Wed Aug 02 23:46:39.807533 2017] [authz_core:error] [pid 8:tid 140624829675264] [client 192.168.33.1:62534] AH01630: client denied by server configuration: /var/www/www.example.com, referer: http://www.example.com/
+[Wed Aug 02 23:46:41.509386 2017] [authz_core:error] [pid 8:tid 140624821282560] [client 192.168.33.1:62534] AH01630: client denied by server configuration: /var/www/www.example.com
+[Wed Aug 02 23:46:41.592947 2017] [authz_core:error] [pid 8:tid 140624745461504] [client 192.168.33.1:62534] AH01630: client denied by server configuration: /var/www/www.example.com, referer: http://www.example.com/
+[Wed Aug 02 23:46:43.197596 2017] [authz_core:error] [pid 8:tid 140624737068800] [client 192.168.33.1:62534] AH01630: client denied by server configuration: /var/www/www.example.com
+[Wed Aug 02 23:46:43.289283 2017] [authz_core:error] [pid 8:tid 140624728676096] [client 192.168.33.1:62534] AH01630: client denied by server configuration: /var/www/www.example.com, referer: http://www.example.com/
+[Wed Aug 02 23:47:18.918386 2017] [authz_core:error] [pid 8:tid 140624720283392] [client 192.168.33.1:62540] AH01630: client denied by server configuration: /var/www/www.example.com, referer: http://www.example.com/

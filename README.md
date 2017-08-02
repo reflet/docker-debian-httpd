@@ -16,7 +16,7 @@
 
 ```
 $ docker pull reflet/debian8-httpd
-$ docker run --name httpd -d -p 80:80 local/debian8-httpd
+$ docker run --name httpd -d -p 80:80 -v "$PWD":/var/www/ reflet/debian8-httpd
 $ docker ps -a
 $ curl http://192.168.33.10/
 ```

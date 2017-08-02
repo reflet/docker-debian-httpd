@@ -20,13 +20,15 @@ ENV TERM xterm
 RUN apt-get -y install less vim git
 
 # apache setting
-RUN chmod 705 /var/www/ && \
+RUN mkdir /var/www/ && chmod 705 /var/www/ && \
     mkdir -p /usr/local/apache2/conf.d/virtualhost/ && \
     { \
       echo ''; \
       echo 'LoadModule rewrite_module modules/mod_rewrite.so'; \
       echo 'LoadModule proxy_module modules/mod_proxy.so'; \
       echo 'LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so'; \
+      echo 'LoadModule ssl_module modules/mod_ssl.so'; \
+      echo 'LoadModule socache_shmcb_module modules/mod_socache_shmcb.so'; \
       echo ''; \
       echo 'DirectoryIndex index.php index.html'; \
       echo '<FilesMatch \.php$>'; \
@@ -47,10 +49,17 @@ RUN chmod 705 /var/www/ && \
       echo '  </Directory>'; \
       echo '</VirtualHost>'; \
       echo ''; \
+      echo '# SSL'; \
+      echo 'Include conf/extra/httpd-ssl.conf'; \
+      echo ''; \
       echo '# Virtualhost Configuration'; \
       echo '# Load config files in the "/usr/local/apache2/conf.d/virtualhost/" directory, if any.'; \
       echo 'IncludeOptional conf.d/virtualhost/*.conf'; \
     } >> /usr/local/apache2/conf/httpd.conf
+
+COPY ./server.key /usr/local/apache2/conf/server.key
+COPY ./server.crt /usr/local/apache2/conf/server.crt
+RUN sed -i -e "s/www.example.com/127.0.0.1/g" /usr/local/apache2/conf/extra/httpd-ssl.conf
 
 # Enabling module rewrite.
 # RUN a2enmod rewrite
